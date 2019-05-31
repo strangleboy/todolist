@@ -1,2 +1,3 @@
 master.txt
 hello world!
+this new;
