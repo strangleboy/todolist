@@ -5,8 +5,8 @@
       <van-swipe-cell v-for="(item,key) in oldlist" :key="key">
         <van-cell :border="false" :title="item" value="请右滑" />
         <template #right>
-          <van-button type="danger" text="删除"  @click.prevent="deleteWord(key)"/>
-          <van-button type="primary" text="修改" @click.prevent="updateWord(key)" />
+          <van-button type="danger" text="删除"  @click.prevent="delItem(key)"/>
+          <van-button type="primary" text="恢复" @click.prevent="recover(key)" />
         </template>
       </van-swipe-cell>
     </div>
